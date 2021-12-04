@@ -10,7 +10,7 @@
 <body>  
   <?php echo "<h1>Hello World! (CSS has changed this text to blue!)</h1>" ?>  
   <img src="img/thedude.jpg" alt="The dude">
-  <?php include("example.php"); ?>
+  <?php include("entries.php"); ?>
   <button type="button" onclick="helloJS()">Click Me!</button>
   
 </body>
