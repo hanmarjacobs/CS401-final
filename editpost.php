@@ -7,4 +7,10 @@
     <li><a href="editpost.php">Edit Post</a></li>
   </ul>
 </nav>
+
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Hello World</title>
+</head>
+
 </html>
