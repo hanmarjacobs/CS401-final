@@ -1,7 +1,7 @@
 # Final website for CS401
 
-Name: YOUR NAME HERE
-email: YOUR EMAIL HERE
+Name: Hannah Jacobson
+email: hannahjacobson@u.boisestate.edu
 
 ## How to run this website
 
