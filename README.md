@@ -27,3 +27,5 @@ Create Page - allow user to make new post
 Edit Page - allow user to edit post
           - include way to delete post
 Store log entires as files?
+
+Ref:https://stackoverflow.com/questions/35443812/how-to-save-string-entered-in-html-form-to-text-file

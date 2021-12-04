@@ -17,7 +17,30 @@
 <body>  
   <?php echo "<h1>Hello World! (CSS has changed this text to blue!)</h1>" ?>  
   <img src="img/thedude.jpg" alt="The dude">
-  <?php include("readentries.php"); ?>
+
+
+  <?php
+    $filename = "blogEntries.txt";
+    $posts = fopen($filename, "r");
+    if (!$posts) {
+      die("Unable to open $filename.");
+    }
+
+    // Read lines until EOF is reached
+    while (!feof($posts)) {
+      $line = fgets($posts);
+      $parts = explode("@", $line);
+      echo "<p>$parts[0] ($parts[1]):";
+      for ($i = 2; $i < count($parts); $i++) {
+          echo " $parts[$i]";
+      }
+      echo "</p>";
+    }
+
+    fclose($posts);
+?>
+
+
   <button type="button" onclick="helloJS()">Click Me!</button>
   
 </body>
