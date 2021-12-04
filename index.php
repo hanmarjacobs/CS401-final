@@ -32,8 +32,6 @@
       $parts = explode("`", $line);
       echo "<span><h2>$parts[0]</h2> <p>$parts[1]</p>";
       echo "</span>";
-      echo "<form action=\"editpost.php\" method=\"POST\"> <input type=\"hidden\" id=\"postTitle\" name=\"postTitle\" value=\"$post_id\"> <input type=\"submit\" value=\"Edit\"/>";
-      echo "</form>";
     }
 
     fclose($posts);
