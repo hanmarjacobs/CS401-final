@@ -31,17 +31,17 @@
       $line = fgets($posts);
       $parts = explode("`", $line);
       echo "<span><h2>$parts[0]</h2> <p>$parts[1]</p>";
-      for ($i = 2; $i < count($parts); $i++) {
-          echo " $parts[$i]";
-      }
       echo "</span>";
+      echo "<button type=\"button\" onclick=\"editPost($parts[0])\">Edit</button>";
+
+
     }
 
     fclose($posts);
-?>
+  ?>
 
 
-  <button type="button" onclick="helloJS()">Click Me!</button>
+  <!--<button type="button" onclick="helloJS()">Click Me!</button>-->
   
 </body>
   <script src="js/main.js"></script>
