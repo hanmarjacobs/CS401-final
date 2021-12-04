@@ -13,4 +13,12 @@
   <title>Hello World</title>
 </head>
 
+<?php
+
+    if( isset($_POST['postTitle']) )
+    {
+        $txt= $_POST['title']; 
+        echo $txt;
+    }
+?>
 </html>
