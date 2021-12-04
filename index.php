@@ -29,7 +29,7 @@
     // Read lines until EOF is reached
     while (!feof($posts)) {
       $line = fgets($posts);
-      $parts = explode("@", $line);
+      $parts = explode("`", $line);
       echo "<span><h2>$parts[0]</h2> <p>$parts[1]</p>";
       for ($i = 2; $i < count($parts); $i++) {
           echo " $parts[$i]";
