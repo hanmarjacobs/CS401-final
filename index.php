@@ -30,11 +30,11 @@
     while (!feof($posts)) {
       $line = fgets($posts);
       $parts = explode("@", $line);
-      echo "<p>$parts[0] ($parts[1]):";
+      echo "<span><h2>$parts[0]</h2> <p>$parts[1]</p>";
       for ($i = 2; $i < count($parts); $i++) {
           echo " $parts[$i]";
       }
-      echo "</p>";
+      echo "</span>";
     }
 
     fclose($posts);
