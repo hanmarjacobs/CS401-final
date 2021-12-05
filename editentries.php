@@ -28,7 +28,6 @@ if( isset($_POST['Entry'] ) && isset( $_POST['textentry'] ) && isset( $_POST['ti
     $source='blogEntries.txt';
     $target='editingFile.txt';
 
-    // copy operation
     $sh=fopen($source, 'r');
     $th=fopen($target, 'w');
     while (!feof($sh)) {
@@ -43,9 +42,7 @@ if( isset($_POST['Entry'] ) && isset( $_POST['textentry'] ) && isset( $_POST['ti
     fclose($sh);
     fclose($th);
 
-    // delete old source file
     unlink($source);
-    // rename target file to source file
     rename($target, $source);
   
 }

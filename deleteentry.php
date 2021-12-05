@@ -15,12 +15,11 @@
 
 <?php
 
-if( isset($_POST['Entry'] ) && isset( $_POST['textentry'] ) && isset( $_POST['title'] ) )
+if( isset($_POST['Entry'] ))
 {
 
     $lines = file('blogEntries.txt');
     $lineNumber = count(file($filename));
-    $txt = $_POST['title'].'`'.$_POST['textentry'] . PHP_EOL; 
     $replace = $_POST['Entry'];
     $result = '';
     $count = 0;
@@ -28,13 +27,12 @@ if( isset($_POST['Entry'] ) && isset( $_POST['textentry'] ) && isset( $_POST['ti
     $source='blogEntries.txt';
     $target='editingFile.txt';
 
-    // copy operation
     $sh=fopen($source, 'r');
     $th=fopen($target, 'w');
     while (!feof($sh)) {
         $line=fgets($sh);
         if ($count == $replace) {
-            $line=$txt;
+            $line="";
         }
         fwrite($th, $line);
         $count++;
@@ -43,9 +41,7 @@ if( isset($_POST['Entry'] ) && isset( $_POST['textentry'] ) && isset( $_POST['ti
     fclose($sh);
     fclose($th);
 
-    // delete old source file
     unlink($source);
-    // rename target file to source file
     rename($target, $source);
   
 }
