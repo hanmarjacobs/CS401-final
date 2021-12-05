@@ -19,7 +19,7 @@
     $lineNumber = count(file($filename));
     
     echo "<form action=\"editentries.php\" target=\"_blank\" method=\"POST\">";
-    echo "<select name=\"Entry\">";
+    echo "<select name=\"Entry\"> id=\"Entry\">";
 
     for($i = 0; $i < $lineNumber; $i++){
         $x = $i + 1;

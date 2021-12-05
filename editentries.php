@@ -25,20 +25,28 @@ if( isset($_POST['Entry'] ) && isset( $_POST['textentry'] ) && isset( $_POST['ti
     $result = '';
     $count = 0;
 
-    foreach($lines as $line) {
-        if($count == $replace) {
-            $result .= $txt;
-        } else {
-            $result .= $line;
+    $source='blogEntries.txt';
+    $target='editingFile.txt';
+
+    // copy operation
+    $sh=fopen($source, 'r');
+    $th=fopen($target, 'w');
+    while (!feof($sh)) {
+        $line=fgets($sh);
+        if (strpos($line, '@parsethis')!==false) {
+            $line='new line to be inserted' . PHP_EOL;
         }
-        $count++;
+        fwrite($th, $line);
     }
 
-    file_put_contents('file.txt', $result);
+    fclose($sh);
+    fclose($th);
 
-
-
-    
+    // delete old source file
+    unlink($source);
+    // rename target file to source file
+    rename($target, $source);
+  
 }
 
 ?>
