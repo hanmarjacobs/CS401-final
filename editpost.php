@@ -17,9 +17,8 @@
 
     $filename = "blogEntries.txt";
     $lineNumber = count(file($filename));
-
-    echo $lineNumber;
-
+    
+    echo "<form action=\"editentries.php\" target=\"_blank\" method=\"POST\">";
     echo "<select name=\"Entry\">";
 
     for($i = 0; $i < $lineNumber; $i++){
@@ -28,6 +27,18 @@
     }
 
     echo "</select>";
+
+    echo "<p>";
+    echo "<label for=\"title\">Title:</label>";
+    echo "<input type=\"text\" id=\"title\" name=\"title\" placeholder=\"My Blog Post!\" required>";
+    echo "</p>";
+    echo "<p>";
+    echo "<label for=\"textentry\">Text:</label>";
+    echo "<textarea id=\"textentry\" name=\"textentry\" placeholder=\"Hello World!\" rows=\"10\" cols=\"60\" required></textarea>";
+    echo "</p>";
+
+    echo "<p><input type=\"submit\" value=\"Submit\"></p>";
+    echo "</form>";
 
 ?>
 
