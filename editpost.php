@@ -46,4 +46,25 @@
 
 <h1> Delete </h1>
 
+<?php
+
+    $filename = "blogEntries.txt";
+    $lineNumber = count(file($filename));
+
+    echo "<form action=\"deleteentry.php\" target=\"_blank\" method=\"POST\">";
+    echo "<select name=\"Entry\"> id=\"Entry\">";
+
+    for($i = 0; $i < $lineNumber; $i++){
+        $x = $i + 1;
+        echo "<option value=$i>Entry $x</option>";
+    }
+
+    echo "</select>";
+
+    echo "<p><input type=\"submit\" value=\"Submit\"></p>";
+    echo "</form>";
+
+
+?>
+
 </html>
