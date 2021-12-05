@@ -13,5 +13,22 @@
   <title>Hello World</title>
 </head>
 
+<?php
+
+    $filename = "blogEntries.txt";
+    $lineNumber = count(file($filename));
+
+    echo $lineNumber;
+
+    echo "<select name=\"Entry\">";
+
+    for($i = 0; $i < $lineNumber; $i++){
+        $x = $i + 1;
+        echo "<option value=$i>Entry $x</option>";
+    }
+
+    echo "</select>";
+
+?>
 
 </html>
