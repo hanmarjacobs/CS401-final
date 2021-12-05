@@ -13,6 +13,8 @@
   <title>Hello World</title>
 </head>
 
+<h1> Edit </h1>
+
 <?php
 
     $filename = "blogEntries.txt";
@@ -41,5 +43,7 @@
     echo "</form>";
 
 ?>
+
+<h1> Delete </h1>
 
 </html>

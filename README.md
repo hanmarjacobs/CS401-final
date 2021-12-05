@@ -29,5 +29,5 @@ Edit Page - allow user to edit post
 Store log entires as files?
 
 Ref:https://stackoverflow.com/questions/35443812/how-to-save-string-entered-in-html-form-to-text-file
-https://stackoverflow.com/questions/18991843/replace-line-in-text-file-using-php
+https://stackoverflow.com/questions/235604/overwrite-line-in-file-with-php
 

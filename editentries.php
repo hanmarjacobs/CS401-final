@@ -33,10 +33,11 @@ if( isset($_POST['Entry'] ) && isset( $_POST['textentry'] ) && isset( $_POST['ti
     $th=fopen($target, 'w');
     while (!feof($sh)) {
         $line=fgets($sh);
-        if (strpos($line, '@parsethis')!==false) {
-            $line='new line to be inserted' . PHP_EOL;
+        if ($count == $replace) {
+            $line=$txt;
         }
         fwrite($th, $line);
+        $count++;
     }
 
     fclose($sh);
