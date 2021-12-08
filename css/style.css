@@ -4,4 +4,27 @@ h1 {
 
 li {
     display: inline;
+    width: 100px;
 }
+
+li a {
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    background-color: #757575;
+    
+  }
+
+  li a:hover {
+    background-color: #2f333a;
+  }
+
+  .active {
+    background-color: #2f333a;
+  }
