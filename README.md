@@ -5,29 +5,51 @@ email: hannahjacobson@u.boisestate.edu
 
 ## How to run this website
 
-Detail how to run your code here!
+Welcome to the Secret Wizard Blog!
+
+From the folder containing the source files, run the following command
+to enable php, if you haven't already:
+
+php -S localhost:3000
+
+Then open localhost:3000 in your web browser!
 
 ## Bugs
 
-Detail any known bugs here
+There is an extra <div> container printed at the end of the posts.
+This is because the file containing all posts has an empty line at it's
+end, due to the method of appending each new post. It does not interfere
+with the numbering of posts in the edit dropdowns, but it does create
+an empty rectangle at the bottom of the home page.
 
 ## Features
 
-Review all the features of your app here.
+From the home page, you can read all blog posts and access the pages
+to write a new one or edit an existing post.
 
+To write a new post, simply enter a post title and content and hit 
+the submit button.
 
+To edit a new post, you must select which post is being edited from
+a dropdown menu. Posts are numbered according to chronological order.
+I recognize that this is inefficient and hostile to users. I will
+not be changing it. Then, enter a new post title and content. Once 
+you hit submit, the original post will be overwritten.
 
+The edit page also contains a mechanism to delete posts. Select the post
+number in the same fashion as if you were editing it, and hit submit!
+The post will be erased from history.
 
-Pages require nav
-    Highlight which page we're on, or give it a title, whatever
-custom style sheet
+## References
 
-Home Page - displays all current blog entries
-Create Page - allow user to make new post
-Edit Page - allow user to edit post
-          - include way to delete post
-Store log entires as files?
+The following links are code and code discussions that were referenced
+for this project.
 
-Ref:https://stackoverflow.com/questions/35443812/how-to-save-string-entered-in-html-form-to-text-file
+https://stackoverflow.com/questions/35443812/how-to-save-string-entered-in-html-form-to-text-file
 https://stackoverflow.com/questions/235604/overwrite-line-in-file-with-php
+
+Wizard art painted by Myles Pinkney.
+https://www.mylespinkney.com/planetarius.htm
+
+The starry background is liscensed under Creative Commons.
 
