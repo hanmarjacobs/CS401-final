@@ -1,12 +1,13 @@
 h1 {
-    color:rgb(93, 47, 199);
+    color:rgb(199, 179, 247);
     margin-left:5%;
     margin-right:5%;
-   
+    font-family: Luminari, fantasy;
 }
 h2 {
     margin-left:1%;
-    
+    font-family: Verdana, sans-serif;
+    padding-top: 2px;
 }
 
 body {
@@ -48,25 +49,65 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 10px;
-    background-color: #757575;
-   
-    
-  }
+    background-color: #4e4a58;   
+}
 
-  li a:hover {
-    background-color: #2f333a;
-    
-  }
+input[type = submit] {
+    margin-left: 5%;
+    background-color:#4e4a58;
+    padding: 15px;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+}
 
-  .active {
-    background-color: #2f333a;
-    
-  }
+select {
+    margin-left: 5%;
+    width: 300px;
+    border: none;
+    border-radius: 2px;
+}
 
-  .center {
+input[type = text] {
+    margin-left: 5%;
+    width: 300px;
+    border: none;
+    border-radius: 2px;
+}
+
+textarea {
+    margin-left: 5%;
+    width: 550px;
+    border: none;
+    border-radius: 2px;
+}
+
+label {
+    display: block;
+    color: white;
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+    margin-left: 5%;
+    padding-bottom: 5px;
+}
+
+input[type = submit]:hover {
+    background-color: #2f263f; 
+}
+
+li a:hover {
+    background-color: #2f263f; 
+}
+
+.active {
+    background-color: #2f263f;
+}
+
+.center {
       display: block;
       margin-left: auto;
-      margin-right: auto;
-      
+      margin-right: auto; 
   }
 
