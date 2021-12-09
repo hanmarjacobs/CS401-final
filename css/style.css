@@ -2,36 +2,46 @@ h1 {
     color:rgb(93, 47, 199);
     margin-left:5%;
     margin-right:5%;
+   
 }
 h2 {
     margin-left:1%;
+    
 }
 
 body {
-    background-color:#c7c7c7;
+    background-image: url(../img/space-background.jpg);
+    background-color:black;
+
 }
 
 div {
     margin-left:4%;
     margin-right:4%;
     background-color:#dad6d6;
+    
 }
 
 div p {
     margin-left:1%;
     margin-right:1%;
     padding-bottom:6px;
+    
 }
 
 li {
     display: inline;
     width: 100px;
+    
 }
 
 li a {
     padding: 10px;
     text-align: center;
     color: white;
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+    
 }
 
 ul {
@@ -39,13 +49,24 @@ ul {
     margin: 0;
     padding: 10px;
     background-color: #757575;
+   
     
   }
 
   li a:hover {
     background-color: #2f333a;
+    
   }
 
   .active {
     background-color: #2f333a;
+    
   }
+
+  .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      
+  }
+

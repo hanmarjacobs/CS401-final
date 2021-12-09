@@ -15,7 +15,7 @@
 
 
 <body>  
-  <h1>Secret Wizard Forum</h1>
+  <img class = "center" src="img/wizard header.png" alt="An awesome 70's wizard holding the words 'Secret Wizard Blog'">
 
   <?php
     $filename = "blogEntries.txt";
@@ -36,5 +36,5 @@
   ?>
 
 </body>
-  <script src="js/main.js"></script>
+
 </html>
