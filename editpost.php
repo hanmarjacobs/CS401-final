@@ -10,7 +10,7 @@
 
 <head>
   <link rel="stylesheet" href="css/style.css">
-  <title>Hello World</title>
+  <title>Wizard</title>
 </head>
 
 <h1> Edit </h1>
@@ -32,11 +32,11 @@
 
     echo "<p>";
     echo "<label for=\"title\">Title:</label>";
-    echo "<input type=\"text\" id=\"title\" name=\"title\" placeholder=\"My Blog Post!\" required>";
+    echo "<input type=\"text\" id=\"title\" name=\"title\" placeholder=\"Rename this Post!\" required>";
     echo "</p>";
     echo "<p>";
     echo "<label for=\"textentry\">Text:</label>";
-    echo "<textarea id=\"textentry\" name=\"textentry\" placeholder=\"Hello World!\" rows=\"10\" cols=\"60\" required></textarea>";
+    echo "<textarea id=\"textentry\" name=\"textentry\" placeholder=\"I am overwriting all your arcane secrets as we speak.\" rows=\"10\" cols=\"60\" required></textarea>";
     echo "</p>";
 
     echo "<p><input type=\"submit\" value=\"Submit\"></p>";

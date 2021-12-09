@@ -10,8 +10,15 @@
 
 <head>
   <link rel="stylesheet" href="css/style.css">
-  <title>Deleted!</title>
+  <title>Wizard</title>
 </head>
+
+<h1>Deleted!</h1>
+<p>
+  <tiny>
+    Now they'll never find your secrets...
+</tiny>
+</p>
 
 <?php
 

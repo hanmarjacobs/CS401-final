@@ -10,8 +10,10 @@
 
 <head>
   <link rel="stylesheet" href="css/style.css">
-  <title>Posted!</title>
+  <title>Wizard</title>
 </head>
+
+<h1>Posted!</h1>
 
 <?php
 

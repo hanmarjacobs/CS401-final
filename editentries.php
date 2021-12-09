@@ -10,8 +10,10 @@
 
 <head>
   <link rel="stylesheet" href="css/style.css">
-  <title>Edited!</title>
+  <title>Wizard</title>
 </head>
+
+<h1>Edited!</h1>
 
 <?php
 

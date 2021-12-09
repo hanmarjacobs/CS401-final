@@ -10,14 +10,12 @@
 
 <head>
   <link rel="stylesheet" href="css/style.css">
-  <title>Hello World</title>
+  <title>Wizard</title>
 </head>
 
 
 <body>  
-  <?php echo "<h1>Hello World! (CSS has changed this text to blue!)</h1>" ?>  
-  <img src="img/thedude.jpg" alt="The dude">
-
+  <h1>Secret Wizard Forum</h1>
 
   <?php
     $filename = "blogEntries.txt";
@@ -30,16 +28,13 @@
     while (!feof($posts)) {
       $line = fgets($posts);
       $parts = explode("`", $line);
-      echo "<span><h2>$parts[0]</h2> <p>$parts[1]</p>";
-      echo "</span>";
+      echo "<div><h2>$parts[0]</h2> <p>$parts[1]</p>";
+      echo "</div>";
     }
 
     fclose($posts);
   ?>
 
-
-  <!--<button type="button" onclick="helloJS()">Click Me!</button>-->
-  
 </body>
   <script src="js/main.js"></script>
 </html>

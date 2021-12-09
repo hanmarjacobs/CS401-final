@@ -10,17 +10,17 @@
 
 <head>
   <link rel="stylesheet" href="css/style.css">
-  <title>Hello World</title>
+  <title>Wizard</title>
 </head>
 
 <form action="writeentries.php" target="_blank" method="POST">
    <p>
      <label for="title">Title:</label>
-     <input type="text" id="title" name="title" placeholder="My Blog Post!">
+     <input type="text" id="title" name="title" placeholder="My Wizardly Post Title!">
    </p>
    <p>
      <label for="textentry">Text:</label>
-     <textarea id="textentry" name="textentry" placeholder="Hello World!" rows="10" cols="60"></textarea>
+     <textarea id="textentry" name="textentry" placeholder="These spells are too complex for anyone else to understand, I swear." rows="10" cols="60"></textarea>
    </p>
    <p>
      <input type="submit" value="Submit">
