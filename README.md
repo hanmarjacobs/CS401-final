@@ -17,7 +17,7 @@ Then open localhost:3000 in your web browser!
 ## Bugs
 
 There is an extra <div> container printed at the end of the posts.
-This is because the file containing all posts has an empty line at it's
+This is because the file containing all posts has an empty line at its
 end, due to the method of appending each new post. It does not interfere
 with the numbering of posts in the edit dropdowns, but it does create
 an empty rectangle at the bottom of the home page.
