@@ -22,6 +22,12 @@ end, due to the method of appending each new post. It does not interfere
 with the numbering of posts in the edit dropdowns, but it does create
 an empty rectangle at the bottom of the home page.
 
+Also, if someone uses a '`' in their post, the post will
+be cut off prematurely. If it is present in their post name, then
+the second half of the title - after the '`' - will be read as
+the content of their post, and the body of whatever text they
+wrote will be skipped over.
+
 ## Features
 
 From the home page, you can read all blog posts and access the pages
